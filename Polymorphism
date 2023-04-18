@@ -1,0 +1,26 @@
+#Write a Multiply function for two integers and use overload the function by changing the number of parameters for three integers.
+import java.util.*;
+class Main {    
+    int Multiply(int a, int b) 
+    { 
+        return a * b; 
+    } 
+  
+    // Method with the same name but 3 parameter 
+    int Multiply(int a, int b, int c) 
+    { 
+        return a * b * c; 
+    } 
+    public static void main(String[] args) 
+    { 
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        int c=in.nextInt();
+        int d=in.nextInt();
+        int e=in.nextInt();
+        Main m=new Main();
+        System.out.println(m.Multiply(a, b));
+        System.out.println(m.Multiply(c, d, e)); 
+    } 
+} 
