@@ -1,0 +1,31 @@
+#Write a Multiply function for two integers and use overload the function by changing the parameter for the double data type.
+
+Input format
+Input two Integers in a separate line & two Double in a separate line.
+
+Output format
+One Integer value and Double value after performing multiplication in a separate line.
+    import java.util.*;
+    class Main 
+    {
+    int Multiply(int a, int b) 
+    { 
+        return a * b; 
+    } 
+    
+    double Multiply(double a, double b) 
+    { 
+        return a * b; 
+    }
+    public static void main(String[] args) 
+    { 
+        Scanner in=new Scanner(System.in);
+        int a=in.nextInt();
+        int b=in.nextInt();
+        double c = in.nextDouble();
+        double d=in.nextDouble();
+        Main m=new Main();
+        System.out.println(m.Multiply(a, b)); 
+        System.out.println(m.Multiply(c, d)); 
+    } 
+} 
